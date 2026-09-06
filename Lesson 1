@@ -1,0 +1,231 @@
+```html
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rajnish Study Worksheet</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo-area">
+            <div class="logo">📚</div>
+
+            <div>
+                <h1>Rajnish Study</h1>
+                <p>Fun Learning • Smart Learning</p>
+            </div>
+        </div>
+
+        <div class="header-icon">
+            🎓
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>🌟 Welcome to Worksheet World!</h2>
+
+            <p>
+                ધોરણ 1 થી 5 માટે સુંદર અને મજેદાર Online Worksheets
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="scrollToWorksheets()">
+                    🚀 Start Learning
+                </button>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            🧒📖✏️
+        </div>
+
+    </section>
+
+
+    <!-- ================= FILTER SECTION ================= -->
+
+    <section class="filter-section" id="worksheets">
+
+        <h2>📖 Choose Your Worksheet</h2>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Worksheet શોધો..."
+                oninput="filterWorksheets()"
+            >
+
+        </div>
+
+
+        <!-- Standard Filter -->
+        <div class="filter-group">
+
+            <h3>🎓 ધોરણ પસંદ કરો</h3>
+
+            <div class="filter-buttons">
+
+                <button
+                    class="grade-btn active"
+                    data-grade="all"
+                    onclick="setGrade('all', this)">
+                    બધા
+                </button>
+
+                <button
+                    class="grade-btn"
+                    data-grade="1"
+                    onclick="setGrade('1', this)">
+                    ધોરણ 1
+                </button>
+
+                <button
+                    class="grade-btn"
+                    data-grade="2"
+                    onclick="setGrade('2', this)">
+                    ધોરણ 2
+                </button>
+
+                <button
+                    class="grade-btn"
+                    data-grade="3"
+                    onclick="setGrade('3', this)">
+                    ધોરણ 3
+                </button>
+
+                <button
+                    class="grade-btn"
+                    data-grade="4"
+                    onclick="setGrade('4', this)">
+                    ધોરણ 4
+                </button>
+
+                <button
+                    class="grade-btn"
+                    data-grade="5"
+                    onclick="setGrade('5', this)">
+                    ધોરણ 5
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Subject Filter -->
+        <div class="filter-group">
+
+            <h3>📚 વિષય પસંદ કરો</h3>
+
+            <div class="filter-buttons">
+
+                <button
+                    class="subject-btn active"
+                    data-subject="all"
+                    onclick="setSubject('all', this)">
+                    બધા વિષય
+                </button>
+
+                <button
+                    class="subject-btn"
+                    data-subject="gujarati"
+                    onclick="setSubject('gujarati', this)">
+                    ગુજરાતી
+                </button>
+
+                <button
+                    class="subject-btn"
+                    data-subject="english"
+                    onclick="setSubject('english', this)">
+                    English
+                </button>
+
+                <button
+                    class="subject-btn"
+                    data-subject="math"
+                    onclick="setSubject('math', this)">
+                    ગણિત
+                </button>
+
+                <button
+                    class="subject-btn"
+                    data-subject="environment"
+                    onclick="setSubject('environment', this)">
+                    પર્યાવરણ
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WORKSHEET CONTAINER ================= -->
+
+    <main>
+
+        <div
+            class="worksheet-grid"
+            id="worksheetContainer">
+        </div>
+
+        <!-- No Result -->
+        <div
+            id="noResult"
+            class="no-result"
+            style="display:none;">
+
+            😔
+
+            <h3>Worksheet મળી નથી</h3>
+
+            <p>
+                કૃપા કરીને બીજું ધોરણ અથવા વિષય પસંદ કરો.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>📚 Rajnish Study</h3>
+
+        <p>
+            Learn • Practice • Improve
+        </p>
+
+        <p class="copyright">
+            © 2026 Rajnish Study. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
