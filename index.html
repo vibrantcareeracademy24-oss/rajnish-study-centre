@@ -1,1 +1,632 @@
-<!doctype html><html lang="gu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rajnish Study Centre</title><link rel="stylesheet" href="style.css"></head><body><header><b>📚 RAJNISH STUDY CENTRE</b><span>Free Online Worksheet</span></header><main class="card"><div class="head"><div><h1>ધોરણ 3 – પર્યાવરણ અને સામાન્ય જ્ઞાન</h1><h2>પર્યાવરણ અને સામાન્ય જ્ઞાન Worksheet – 02</h2></div><strong>10 ગુણ</strong></div><div class="info"><label>વિદ્યાર્થીનું નામ<input id="name" placeholder="તમારું નામ લખો"></label><label>ધોરણ<select id="std"><option>3</option></select></label></div><form id="form"></form><button id="submit">✓ Worksheet Submit કરો</button><div id="result" class="result hidden"></div><p id="status"></p></main><footer>© Rajnish Study Centre • બાળકો માટે મફત શૈક્ષણિક સેવા</footer><script src="config.js"></script><script src="app2.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Rajnish Study Centre | મફત શિક્ષણ</title>
+
+    <meta name="description"
+          content="Rajnish Study Centre - બાલવાટિકા થી ધોરણ 8 સુધીના વિદ્યાર્થીઓ માટે મફત શૈક્ષણિક સામગ્રી">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo-area">
+
+        <div class="logo-icon">📚</div>
+
+        <div>
+            <h1>Rajnish Study Centre</h1>
+            <p>મફત શિક્ષણ • સરળ શિક્ષણ • દરેક બાળક માટે</p>
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+        ☰
+    </button>
+
+
+    <!-- Navigation -->
+
+    <nav id="mainNav">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="#balvatika">
+            🌱 બાલવાટિકા–2
+        </a>
+
+        <a href="#std35">
+            📚 ધોરણ 3–5
+        </a>
+
+        <a href="#std68">
+            📖 ધોરણ 6–8
+        </a>
+
+        <a href="#worksheets">
+            📝 Worksheets
+        </a>
+
+        <a href="#ebooks">
+            📘 eBooks
+        </a>
+
+        <a href="#gk">
+            🧠 GK
+        </a>
+
+        <a href="#spoken">
+            🇬🇧 Spoken English
+        </a>
+
+        <a href="#audio">
+            🎧 Audio
+        </a>
+
+        <a href="#about">
+            ℹ️ About
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="welcome">
+                ✨ Welcome to Rajnish Study Centre
+            </span>
+
+            <h2>
+                ભણો • સમજો • પ્રેક્ટિસ કરો
+            </h2>
+
+            <p>
+                બાલવાટિકા થી ધોરણ 8 સુધીના વિદ્યાર્થીઓ માટે
+                મફત અને સરળ શૈક્ષણિક સામગ્રી.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#classes"
+                   class="primary-btn">
+                    🚀 શીખવાનું શરૂ કરો
+                </a>
+
+                <a href="#worksheets"
+                   class="secondary-btn">
+                    📝 Worksheets જુઓ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-illustration">
+
+            <div class="book">
+                📖
+            </div>
+
+            <div class="student">
+                👦🏻
+            </div>
+
+            <div class="star star1">⭐</div>
+            <div class="star star2">✨</div>
+            <div class="star star3">🌟</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CLASS SECTION ================= -->
+
+<section id="classes"
+         class="section">
+
+    <div class="section-heading">
+
+        <span>📚 LEARN BY CLASS</span>
+
+        <h2>
+            તમારા ધોરણ પ્રમાણે શીખો
+        </h2>
+
+        <p>
+            તમારી ઉંમર અને ધોરણ પ્રમાણે યોગ્ય
+            શૈક્ષણિક સામગ્રી પસંદ કરો.
+        </p>
+
+    </div>
+
+
+
+    <div class="class-grid">
+
+
+        <!-- BALVATIKA -->
+
+        <div id="balvatika"
+             class="class-card card-green">
+
+            <div class="card-icon">
+                🌱
+            </div>
+
+            <span class="class-label">
+                BEGINNER
+            </span>
+
+            <h3>
+                બાલવાટિકા થી ધોરણ 2
+            </h3>
+
+            <p>
+                નાના બાળકો માટે મજા સાથે શીખવાની
+                સરળ અને રસપ્રદ સામગ્રી.
+            </p>
+
+            <div class="subjects">
+
+                <span>🔤 કક્કો</span>
+                <span>📝 બારાખડી</span>
+                <span>🔢 Numbers</span>
+                <span>🇬🇧 ABCD</span>
+                <span>🧮 Basic Maths</span>
+
+            </div>
+
+            <a href="#balvatika-content"
+               class="card-btn">
+                શીખવાનું શરૂ કરો →
+            </a>
+
+        </div>
+
+
+
+        <!-- STD 3-5 -->
+
+        <div id="std35"
+             class="class-card card-blue">
+
+            <div class="card-icon">
+                📚
+            </div>
+
+            <span class="class-label">
+                PRIMARY
+            </span>
+
+            <h3>
+                ધોરણ 3 થી 5
+            </h3>
+
+            <p>
+                પાયાની સમજ મજબૂત કરવા માટે
+                વિષયવાર અભ્યાસ અને Worksheets.
+            </p>
+
+            <div class="subjects">
+
+                <span>📖 ગુજરાતી</span>
+                <span>➗ ગણિત</span>
+                <span>🇬🇧 English</span>
+                <span>🌍 પર્યાવરણ</span>
+                <span>🧠 GK</span>
+
+            </div>
+
+            <a href="#std35-content"
+               class="card-btn">
+                શીખવાનું શરૂ કરો →
+            </a>
+
+        </div>
+
+
+
+        <!-- STD 6-8 -->
+
+        <div id="std68"
+             class="class-card card-purple">
+
+            <div class="card-icon">
+                📖
+            </div>
+
+            <span class="class-label">
+                MIDDLE SCHOOL
+            </span>
+
+            <h3>
+                ધોરણ 6 થી 8
+            </h3>
+
+            <p>
+                સમજ આધારિત અભ્યાસ, GK,
+                Spoken English અને Practice.
+            </p>
+
+            <div class="subjects">
+
+                <span>📖 ગુજરાતી</span>
+                <span>➗ ગણિત</span>
+                <span>🇬🇧 English</span>
+                <span>🔬 Science</span>
+                <span>🌎 Social Science</span>
+
+            </div>
+
+            <a href="#std68-content"
+               class="card-btn">
+                શીખવાનું શરૂ કરો →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= QUICK LEARNING ================= -->
+
+<section class="quick-section">
+
+    <div class="section-heading">
+
+        <span>✨ QUICK LEARNING</span>
+
+        <h2>
+            એક ક્લિકમાં શીખો
+        </h2>
+
+    </div>
+
+
+    <div class="quick-grid">
+
+
+        <a href="#worksheets"
+           class="quick-card">
+
+            <div>📝</div>
+
+            <h3>
+                Worksheets
+            </h3>
+
+            <p>
+                Online Practice કરો
+            </p>
+
+        </a>
+
+
+        <a href="#ebooks"
+           class="quick-card">
+
+            <div>📘</div>
+
+            <h3>
+                eBooks
+            </h3>
+
+            <p>
+                Digital Books વાંચો
+            </p>
+
+        </a>
+
+
+        <a href="#gk"
+           class="quick-card">
+
+            <div>🧠</div>
+
+            <h3>
+                GK
+            </h3>
+
+            <p>
+                તમારું General Knowledge વધારો
+            </p>
+
+        </a>
+
+
+        <a href="#spoken"
+           class="quick-card">
+
+            <div>🇬🇧</div>
+
+            <h3>
+                Spoken English
+            </h3>
+
+            <p>
+                સરળ રીતે English બોલતા શીખો
+            </p>
+
+        </a>
+
+
+        <a href="#audio"
+           class="quick-card">
+
+            <div>🎧</div>
+
+            <h3>
+                Audio Learning
+            </h3>
+
+            <p>
+                સાંભળીને શીખો
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTENT PLACEHOLDERS ================= -->
+
+<section id="worksheets"
+         class="content-section">
+
+    <div class="content-box">
+
+        <div class="big-icon">📝</div>
+
+        <h2>
+            Online Worksheets
+        </h2>
+
+        <p>
+            ધોરણ પ્રમાણે મફત Online Worksheets,
+            Practice અને Assessment.
+        </p>
+
+        <button onclick="showMessage('Worksheets વિભાગ ટૂંક સમયમાં ઉપલબ્ધ થશે.')">
+            Worksheets જુઓ →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section id="ebooks"
+         class="content-section">
+
+    <div class="content-box">
+
+        <div class="big-icon">📘</div>
+
+        <h2>
+            eBooks
+        </h2>
+
+        <p>
+            બાળકો માટે ઉપયોગી Digital Books
+            અને Learning Materials.
+        </p>
+
+        <button onclick="showMessage('eBooks વિભાગ ટૂંક સમયમાં ઉપલબ્ધ થશે.')">
+            eBooks જુઓ →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section id="gk"
+         class="content-section">
+
+    <div class="content-box">
+
+        <div class="big-icon">🧠</div>
+
+        <h2>
+            General Knowledge
+        </h2>
+
+        <p>
+            Basic થી Advanced GK Questions
+            અને Learning Activities.
+        </p>
+
+        <button onclick="showMessage('GK વિભાગ ટૂંક સમયમાં ઉપલબ્ધ થશે.')">
+            GK શીખો →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section id="spoken"
+         class="content-section">
+
+    <div class="content-box">
+
+        <div class="big-icon">🇬🇧</div>
+
+        <h2>
+            Spoken English
+        </h2>
+
+        <p>
+            બાળકો માટે સરળ English Speaking,
+            Vocabulary અને Daily Sentences.
+        </p>
+
+        <button onclick="showMessage('Spoken English વિભાગ ટૂંક સમયમાં ઉપલબ્ધ થશે.')">
+            English શીખો →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section id="audio"
+         class="content-section">
+
+    <div class="content-box">
+
+        <div class="big-icon">🎧</div>
+
+        <h2>
+            Audio Learning
+        </h2>
+
+        <p>
+            સાંભળીને કક્કો, બારાખડી, ઘડિયા,
+            English અને Numbers શીખો.
+        </p>
+
+        <button onclick="showMessage('Audio Learning વિભાગ ટૂંક સમયમાં ઉપલબ્ધ થશે.')">
+            Audio શીખો →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about"
+         class="about-section">
+
+    <div class="about-content">
+
+        <span>
+            ℹ️ ABOUT RAJNISH STUDY CENTRE
+        </span>
+
+        <h2>
+            દરેક બાળક માટે શિક્ષણ
+        </h2>
+
+        <p>
+            Rajnish Study Centreનો ઉદ્દેશ બાળકોને
+            સરળ, ઉપયોગી અને મફત શૈક્ષણિક સામગ્રી
+            ઉપલબ્ધ કરાવવાનો છે.
+        </p>
+
+        <p>
+            અહીં બાળકો પોતાની ગતિએ શીખી શકે,
+            Practice કરી શકે અને પોતાના જ્ઞાનમાં
+            વધારો કરી શકે.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        📚 Rajnish Study Centre
+    </div>
+
+    <p>
+        મફત શિક્ષણ • સરળ શિક્ષણ • દરેક બાળક માટે
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="#classes">Classes</a>
+
+        <a href="#worksheets">Worksheets</a>
+
+        <a href="#ebooks">eBooks</a>
+
+        <a href="#about">About</a>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Rajnish Study Centre.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu() {
+
+    const nav =
+        document.getElementById("mainNav");
+
+    nav.classList.toggle("show");
+
+}
+
+
+function showMessage(message) {
+
+    alert(message);
+
+}
+
+</script>
+
+</body>
+</html>
