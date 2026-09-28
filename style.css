@@ -1,9 +1,9 @@
 /* =========================================================
-   RAJNISH STUDY CENTRE
-   Main Website CSS
+   🌈 RAJNISH STUDY CENTRE
+   Colourful Kids Education Website
    ========================================================= */
 
-/* ---------- BASIC RESET ---------- */
+/* ================= BASIC RESET ================= */
 
 * {
     margin: 0;
@@ -17,9 +17,9 @@ html {
 
 body {
     font-family: "Noto Sans Gujarati", "Nirmala UI", Arial, sans-serif;
-    background: #f7f9fc;
-    color: #222;
+    color: #263238;
     line-height: 1.6;
+    background: #f4fbff;
 }
 
 a {
@@ -33,21 +33,21 @@ button {
 
 
 /* =========================================================
-   HEADER
+   🌟 HEADER
    ========================================================= */
 
 header {
-    background: #ffffff;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(90deg, #ffffff, #f0f9ff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: auto;
-    padding: 14px 20px;
+    padding: 12px 20px;
 
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ header {
 }
 
 
-/* ---------- LOGO ---------- */
+/* Logo */
 
 .logo {
     display: flex;
@@ -65,34 +65,29 @@ header {
 }
 
 .logo h1 {
-    font-size: 25px;
-    font-weight: 800;
-    color: #173f7a;
+    font-size: 26px;
+    font-weight: 900;
+    color: #1565c0;
     line-height: 1.2;
 }
 
 .logo p {
-    font-size: 13px;
-    color: #666;
-    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00897b;
 }
 
 
 /* =========================================================
-   NAVIGATION
+   🧭 NAVIGATION
    ========================================================= */
-
-nav {
-    display: flex;
-    align-items: center;
-}
 
 nav ul {
     list-style: none;
 
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
 }
 
 nav ul li a {
@@ -101,52 +96,55 @@ nav ul li a {
     padding: 8px 10px;
 
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 
-    color: #333;
+    color: #263238;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 nav ul li a:hover {
-    background: #eef4ff;
-    color: #1769aa;
+    background: #e3f2fd;
+    color: #1565c0;
+    transform: translateY(-2px);
 }
 
 
-/* ---------- MOBILE MENU BUTTON ---------- */
+/* Mobile menu */
 
 .menu-btn {
     display: none;
 
-    background: #1769aa;
+    border: none;
+    border-radius: 10px;
+
+    background: #1565c0;
     color: white;
 
-    border: none;
-    border-radius: 8px;
-
-    padding: 8px 12px;
+    padding: 8px 13px;
 
     font-size: 22px;
+
     cursor: pointer;
 }
 
 
 /* =========================================================
-   HERO SECTION
+   🌈 HERO SECTION
    ========================================================= */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #eaf4ff,
-        #ffffff,
-        #eefcf5
-    );
+    padding: 85px 20px;
 
-    padding: 80px 20px;
+    background:
+        radial-gradient(circle at 10% 20%, #fff176 0, transparent 18%),
+        radial-gradient(circle at 90% 20%, #ce93d8 0, transparent 20%),
+        radial-gradient(circle at 80% 90%, #80cbc4 0, transparent 22%),
+        linear-gradient(135deg, #d9f3ff, #ffffff, #e8f8e9);
+
+    overflow: hidden;
 }
 
 .hero-container {
@@ -161,35 +159,40 @@ nav ul li a:hover {
 }
 
 
-/* ---------- HERO TEXT ---------- */
+/* Hero text */
 
 .hero-content .welcome {
     display: inline-block;
 
-    font-size: 17px;
-    font-weight: 700;
+    background: #fff3cd;
+    color: #e65100;
 
-    color: #1769aa;
+    padding: 7px 14px;
 
-    margin-bottom: 12px;
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    margin-bottom: 15px;
 }
 
 .hero-content h2 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 900;
 
-    line-height: 1.15;
+    line-height: 1.12;
 
     color: #123c69;
 
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .hero-content h3 {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 27px;
+    font-weight: 800;
 
-    color: #1769aa;
+    color: #00897b;
 
     margin-bottom: 15px;
 }
@@ -198,90 +201,115 @@ nav ul li a:hover {
     max-width: 650px;
 
     font-size: 18px;
-    line-height: 1.8;
+    font-weight: 500;
 
-    color: #555;
+    color: #455a64;
+
+    line-height: 1.8;
 
     margin-bottom: 28px;
 }
 
 
-/* ---------- HERO BUTTONS ---------- */
+/* Hero buttons */
 
 .hero-buttons {
     display: flex;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .btn {
     display: inline-block;
 
-    padding: 12px 22px;
+    padding: 12px 23px;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
 
     transition: 0.3s;
 }
 
 .btn-primary {
-    background: #1769aa;
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
     color: white;
+
+    box-shadow: 0 6px 15px rgba(21, 101, 192, 0.25);
 }
 
 .btn-primary:hover {
-    background: #0e4f82;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(21, 101, 192, 0.30);
 }
 
 .btn-secondary {
-    background: white;
-    color: #1769aa;
+    background: #ffffff;
+    color: #00897b;
 
-    border: 2px solid #1769aa;
+    border: 2px solid #26a69a;
 }
 
 .btn-secondary:hover {
-    background: #1769aa;
+    background: #26a69a;
     color: white;
 }
 
 
-/* ---------- HERO IMAGE / ICON ---------- */
+/* Hero circle */
 
 .hero-image {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .hero-image-box {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
 
     border-radius: 50%;
 
-    background: #ffffff;
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff9c4
+        );
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 110px;
+    font-size: 115px;
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border: 10px solid #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.15),
+        0 0 0 15px rgba(255,255,255,0.45);
+
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 
 /* =========================================================
-   GENERAL SECTION
+   📚 GENERAL SECTION
    ========================================================= */
 
 section {
-    padding: 70px 20px;
+    padding: 75px 20px;
 }
 
 .section-container {
@@ -290,42 +318,44 @@ section {
 }
 
 
-/* ---------- SECTION TITLE ---------- */
+/* Section title */
 
 .section-title {
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .section-title h2 {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 34px;
+    font-weight: 900;
 
     color: #123c69;
 
-    line-height: 1.3;
+    line-height: 1.25;
 
     margin-bottom: 10px;
 }
 
 .section-title p {
-    font-size: 17px;
-    font-weight: 400;
-
-    color: #666;
-
-    max-width: 700px;
+    max-width: 720px;
     margin: auto;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    color: #546e7a;
 }
 
 
 /* =========================================================
-   CLASS CARDS
+   🎒 CLASS SECTION
    ========================================================= */
 
 .class-section {
-    background: #ffffff;
+    background:
+        radial-gradient(circle at 10% 20%, #bbdefb 0, transparent 20%),
+        radial-gradient(circle at 90% 80%, #c8e6c9 0, transparent 20%),
+        #f5fbff;
 }
 
 .class-grid {
@@ -336,37 +366,58 @@ section {
     gap: 25px;
 }
 
+
+/* Class card */
+
 .class-card {
+    position: relative;
+
     background: #ffffff;
 
-    border-radius: 18px;
-
-    padding: 30px 25px;
+    padding: 32px 25px;
 
     text-align: center;
 
-    border: 1px solid #e4eaf1;
+    border-radius: 22px;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    border: 4px solid transparent;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 
     transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.class-card:nth-child(1) {
+    border-color: #64b5f6;
+    background: linear-gradient(180deg, #ffffff, #e3f2fd);
+}
+
+.class-card:nth-child(2) {
+    border-color: #81c784;
+    background: linear-gradient(180deg, #ffffff, #e8f5e9);
+}
+
+.class-card:nth-child(3) {
+    border-color: #ba68c8;
+    background: linear-gradient(180deg, #ffffff, #f3e5f5);
 }
 
 .class-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-9px) rotate(-1deg);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.14);
 }
 
 .class-icon {
-    font-size: 55px;
-
-    margin-bottom: 15px;
+    font-size: 58px;
+    margin-bottom: 14px;
 }
 
 .class-card h3 {
     font-size: 23px;
-    font-weight: 800;
+    font-weight: 900;
 
     color: #123c69;
 
@@ -375,24 +426,21 @@ section {
 
 .class-card p {
     font-size: 16px;
-    color: #666;
+    color: #546e7a;
 
     margin-bottom: 20px;
 }
 
-.class-card .btn {
-    font-size: 15px;
-
-    padding: 10px 18px;
-}
-
 
 /* =========================================================
-   QUICK LEARNING
+   🎯 QUICK LEARNING
    ========================================================= */
 
 .quick-section {
-    background: #f7f9fc;
+    background:
+        radial-gradient(circle at 15% 20%, #fff59d 0, transparent 18%),
+        radial-gradient(circle at 85% 80%, #f8bbd0 0, transparent 20%),
+        #fffaf0;
 }
 
 .quick-grid {
@@ -404,90 +452,130 @@ section {
 }
 
 .quick-card {
-    background: white;
-
     padding: 25px 15px;
 
     text-align: center;
 
-    border-radius: 15px;
+    border-radius: 20px;
 
-    border: 1px solid #e5eaf0;
+    background: white;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+
+    border: 3px solid transparent;
 
     transition: 0.3s;
 }
 
-.quick-card:hover {
-    transform: translateY(-5px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+/* Different colours */
+
+.quick-card:nth-child(1) {
+    background: #e3f2fd;
+    border-color: #64b5f6;
+}
+
+.quick-card:nth-child(2) {
+    background: #fff3e0;
+    border-color: #ffb74d;
+}
+
+.quick-card:nth-child(3) {
+    background: #e8f5e9;
+    border-color: #81c784;
+}
+
+.quick-card:nth-child(4) {
+    background: #f3e5f5;
+    border-color: #ba68c8;
+}
+
+.quick-card:nth-child(5) {
+    background: #fce4ec;
+    border-color: #f06292;
+}
+
+.quick-card:hover {
+    transform: translateY(-7px) scale(1.02);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.13);
 }
 
 .quick-card .icon {
-    font-size: 42px;
-
+    font-size: 43px;
     margin-bottom: 10px;
 }
 
 .quick-card h3 {
     font-size: 19px;
-    font-weight: 800;
+    font-weight: 900;
 
-    color: #123c69;
+    color: #263238;
 
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 .quick-card p {
     font-size: 14px;
-    color: #666;
+    color: #546e7a;
 }
 
 
 /* =========================================================
-   CONTENT SECTIONS
+   📖 CONTENT SECTIONS
    ========================================================= */
 
 .content-section {
-    background: #ffffff;
+    background:
+        linear-gradient(
+            135deg,
+            #e3f2fd,
+            #f3e5f5
+        );
 }
 
 .content-box {
     max-width: 900px;
     margin: auto;
 
-    background: #f7f9fc;
+    background: rgba(255,255,255,0.95);
 
-    padding: 35px;
+    padding: 38px;
 
-    border-radius: 18px;
+    border-radius: 22px;
 
     text-align: center;
 
-    border: 1px solid #e4eaf1;
+    border: 3px solid #90caf9;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
 }
 
 .content-box h3 {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 900;
 
-    color: #123c69;
+    color: #1565c0;
 
     margin-bottom: 10px;
 }
 
 .content-box p {
     font-size: 16px;
-    color: #666;
+
+    color: #546e7a;
 }
 
 
 /* =========================================================
-   ABOUT SECTION
+   💚 ABOUT SECTION
    ========================================================= */
 
 .about-section {
-    background: #eef6ff;
+    background:
+        radial-gradient(circle at 10% 80%, #80cbc4 0, transparent 20%),
+        radial-gradient(circle at 90% 20%, #fff176 0, transparent 20%),
+        linear-gradient(135deg, #e0f7fa, #f1f8e9);
 }
 
 .about-box {
@@ -495,14 +583,16 @@ section {
 
     margin: auto;
 
+    padding: 20px;
+
     text-align: center;
 }
 
 .about-box h2 {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 34px;
+    font-weight: 900;
 
-    color: #123c69;
+    color: #00695c;
 
     margin-bottom: 15px;
 }
@@ -510,37 +600,42 @@ section {
 .about-box p {
     font-size: 17px;
 
-    line-height: 1.9;
+    color: #455a64;
 
-    color: #555;
+    line-height: 1.9;
 
     margin-bottom: 12px;
 }
 
 
 /* =========================================================
-   FOOTER
+   🌟 FOOTER
    ========================================================= */
 
 footer {
-    background: #123c69;
+    background:
+        linear-gradient(
+            135deg,
+            #123c69,
+            #1565c0,
+            #00897b
+        );
 
     color: white;
 
-    padding: 40px 20px 25px;
+    padding: 45px 20px 25px;
 }
 
 .footer-container {
     max-width: 1200px;
-
     margin: auto;
 
     text-align: center;
 }
 
 .footer-container h3 {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 900;
 
     margin-bottom: 8px;
 }
@@ -548,7 +643,7 @@ footer {
 .footer-container p {
     font-size: 15px;
 
-    color: #dce8f5;
+    color: #e3f2fd;
 
     margin-bottom: 8px;
 }
@@ -558,16 +653,16 @@ footer {
 
     padding-top: 18px;
 
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.3);
 
     font-size: 14px;
 
-    color: #dce8f5;
+    color: #dcedc8;
 }
 
 
 /* =========================================================
-   MOBILE MENU
+   📱 TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -582,13 +677,12 @@ footer {
         position: absolute;
 
         top: 100%;
-
         left: 0;
         right: 0;
 
         background: white;
 
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     }
 
     nav.active {
@@ -631,7 +725,7 @@ footer {
 
 
 /* =========================================================
-   TABLET / MOBILE
+   📱 MOBILE
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -645,23 +739,19 @@ footer {
     }
 
     .logo p {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .hero {
-        padding: 55px 18px;
-    }
-
-    .hero-content .welcome {
-        font-size: 15px;
+        padding: 60px 18px;
     }
 
     .hero-content h2 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     .hero-content h3 {
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .hero-content p {
@@ -680,7 +770,7 @@ footer {
     }
 
     .section-title h2 {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .section-title p {
@@ -696,7 +786,7 @@ footer {
     }
 
     .about-box h2 {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .about-box p {
@@ -706,7 +796,7 @@ footer {
 
 
 /* =========================================================
-   SMALL MOBILE
+   📱 SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 380px) {
@@ -716,15 +806,15 @@ footer {
     }
 
     .hero-content h2 {
-        font-size: 31px;
+        font-size: 32px;
     }
 
     .hero-content h3 {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .section-title h2 {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .quick-grid {
@@ -735,80 +825,4 @@ footer {
         width: 100%;
         text-align: center;
     }
-}
-
-/* =========================================================
-   RAJNISH STUDY CENTRE - COLOURFUL PAGE BACKGROUNDS
-   ========================================================= */
-
-/* Main page */
-body {
-    background: #f1f7ff;
-}
-
-/* Header */
-header {
-    background: #ffffff;
-}
-
-/* Hero */
-.hero {
-    background: linear-gradient(
-        135deg,
-        #dff1ff 0%,
-        #f8fbff 50%,
-        #e4f8ed 100%
-    );
-}
-
-/* Class section */
-.class-section {
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #eef7ff 100%
-    );
-}
-
-/* Quick learning */
-.quick-section {
-    background: linear-gradient(
-        135deg,
-        #fff8e8 0%,
-        #f0f8ff 100%
-    );
-}
-
-/* Content sections */
-.content-section {
-    background: #f4f9ff;
-}
-
-/* About */
-.about-section {
-    background: linear-gradient(
-        135deg,
-        #e8f5ff,
-        #effbf3
-    );
-}
-
-/* Content boxes */
-.content-box {
-    background: #ffffff;
-}
-
-/* Cards */
-.class-card,
-.quick-card {
-    background: #ffffff;
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(
-        135deg,
-        #123c69,
-        #1769aa
-    );
 }
