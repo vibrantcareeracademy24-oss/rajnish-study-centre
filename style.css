@@ -736,3 +736,79 @@ footer {
         text-align: center;
     }
 }
+
+/* =========================================================
+   RAJNISH STUDY CENTRE - COLOURFUL PAGE BACKGROUNDS
+   ========================================================= */
+
+/* Main page */
+body {
+    background: #f1f7ff;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #dff1ff 0%,
+        #f8fbff 50%,
+        #e4f8ed 100%
+    );
+}
+
+/* Class section */
+.class-section {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #eef7ff 100%
+    );
+}
+
+/* Quick learning */
+.quick-section {
+    background: linear-gradient(
+        135deg,
+        #fff8e8 0%,
+        #f0f8ff 100%
+    );
+}
+
+/* Content sections */
+.content-section {
+    background: #f4f9ff;
+}
+
+/* About */
+.about-section {
+    background: linear-gradient(
+        135deg,
+        #e8f5ff,
+        #effbf3
+    );
+}
+
+/* Content boxes */
+.content-box {
+    background: #ffffff;
+}
+
+/* Cards */
+.class-card,
+.quick-card {
+    background: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(
+        135deg,
+        #123c69,
+        #1769aa
+    );
+}
